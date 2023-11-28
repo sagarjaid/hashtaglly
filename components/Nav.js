@@ -60,7 +60,7 @@ const Nav = () => {
     <>
       <nav className="flex w-full items-center justify-between p-4">
         <a href="/">
-          <img src="/hashtaglly.svg" className="w-[120px]" />
+          <img src="/hashtaglly-logo.svg" className="w-[120px]" />
         </a>
 
         <div>
