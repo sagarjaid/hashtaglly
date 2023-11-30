@@ -21,21 +21,20 @@ const Tools = () => {
         </h1>
         <hr />
         <div className="flex flex-col flex-wrap  sm:flex-row">
-          <ul className="flex max-w-xl cursor-pointer flex-col gap-2 p-4">
-            {tagObj?.map((tag, i) => {
+          <div className=" flex w-full cursor-pointer flex-col gap-2 p-4">
+            {tagObj?.map((tag) => {
               return (
-                <li>
-                  <span
-                    onClick={() => handleClick(tag?.tag)}
-                    className="flex justify-between"
-                  >
-                    <span>#{tag?.tag}</span>
-                    <span>{tag?.posts}</span>
-                  </span>
-                </li>
+                <a
+                  key={tag?.tag}
+                  href={`${domainUrl}/hashtag/${tag?.tag}`}
+                  className="flex justify-between border-b pb-2 text-blue-600"
+                >
+                  <span>#{tag?.tag}</span>
+                  <span>{tag?.posts}</span>
+                </a>
               );
             })}
-          </ul>
+          </div>
         </div>
         <div className="p-4">
           <Footer />

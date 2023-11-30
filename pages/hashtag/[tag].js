@@ -6,6 +6,7 @@ import SEOMeta from '@/components/SEOMeta';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { tagObj } from '@/components/tagObj';
+import { domainUrl } from '@/components/domainUrl';
 
 const Tag = () => {
   const router = useRouter();
@@ -25,6 +26,7 @@ const Tag = () => {
   const [thirdSet, setThirdSet] = useState('loging hashtag set...');
   const [tagList, setTagList] = useState();
   const [Loading, setLoading] = useState(true);
+  const [copied, setCopied] = useState(false);
 
   let prompt = {
     title: router.query.tag,
@@ -91,18 +93,18 @@ const Tag = () => {
       <div className="relative">
         <SEOMeta
           title={`Hashtags for ${tag} on Instagram, Tiktok in 2023 [Updated]`}
-          description={`Top 30 ${tag} hashtags. Hashtags for ${tag} on Instagram, Tiktok, twitter & more. Best ${tag} hashtags. 2023 UPDATED!`}
+          description={`Top 30 ${tag} hashtags. Hashtags for ${tag} on Instagram, Tiktok, Twitter, X & more. Best ${tag} hashtags. 2023 UPDATED!`}
           slug={tag}
         />
         <HelloBar />
         <main>
           <div className="m-auto flex h-screen max-w-5xl flex-col items-center text-base">
             <Nav />
-            <div className="flex w-full flex-col justify-around border-y p-4 mdx:flex-row">
+            <div className="flex w-full flex-col justify-around border-t p-4 mdx:flex-row">
               <div className="flex w-full flex-col gap-4">
                 <h1 className="text-2xl font-bold">Hashtags for {tag}</h1>
                 <h2 className="text-xl">
-                  Top #{tag} hashtags on Instagram, Twitter, TikTok
+                  Top #{tag} hashtags on Instagram, Twitter, X, TikTok
                 </h2>
                 <div>
                   The most popular and related hashtag for {tag} are as follows
@@ -111,27 +113,89 @@ const Tag = () => {
                 <h3 className="text-lg">#{tag} Hashtags</h3>
                 <div className="relative text-sm">
                   <textarea
-                    className="w-full rounded-md border border-green-600 bg-green-50 p-2"
-                    rows={6}
+                    className="w-full rounded-md border border-blue-600 bg-gray-50 p-2"
+                    rows={7}
                     type="text"
                     spellCheck={false}
                     value={firstSet}
                   />
-                  <button className="absolute bottom-4 right-3 float-right rounded-md border bg-black px-2 py-0.5 text-white ">
-                    copy
+                  <button className="absolute bottom-4 right-3 float-right rounded-lg bg-black p-1 text-white ">
+                    {copied ? (
+                      <svg
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        className="h-[18px] w-[18px] "
+                      >
+                        <path
+                          clipRule="evenodd"
+                          fillRule="evenodd"
+                          d="M10.5 3A1.501 1.501 0 009 4.5h6A1.5 1.5 0 0013.5 3h-3zm-2.693.178A3 3 0 0110.5 1.5h3a3 3 0 012.694 1.678c.497.042.992.092 1.486.15 1.497.173 2.57 1.46 2.57 2.929V19.5a3 3 0 01-3 3H6.75a3 3 0 01-3-3V6.257c0-1.47 1.073-2.756 2.57-2.93.493-.057.989-.107 1.487-.15z"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        className="h-4 w-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
+                        />
+                      </svg>
+                    )}
                   </button>
                 </div>
                 {secondSet && (
                   <div className="relative text-sm">
                     <textarea
-                      className="w-full rounded-md border border-green-600 bg-green-50 p-2"
-                      rows={6}
+                      className="w-full rounded-md border border-blue-600 bg-gray-50 p-2"
+                      rows={7}
                       type="text"
                       spellCheck={false}
                       value={secondSet}
                     />
-                    <button className="absolute bottom-4 right-3 float-right rounded-md border bg-black px-2 py-0.5 text-white ">
-                      copy
+                    {/* <button className="absolute bottom-4 right-3 float-right flex items-center gap-1 rounded-lg border bg-black p-1 px-2.5 text-white ">
+                      <span className="text-md">Copy</span>
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        className="h-4 w-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
+                        />
+                      </svg>
+                    </button> */}
+                    <button className="absolute bottom-4 right-3 float-right rounded-lg bg-black p-1 text-white ">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        className="h-4 w-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
+                        />
+                      </svg>
                     </button>
                   </div>
                 )}
@@ -142,15 +206,29 @@ const Tag = () => {
                 <div className="relative text-sm">
                   <textarea
                     className="w-full rounded-md border border-blue-600 bg-blue-50 p-2"
-                    rows={6}
+                    rows={7}
                     type="text"
                     spellCheck={false}
                     value={thirdSet}
                   />
-                  <button className="absolute bottom-4 right-3 float-right rounded-md border bg-black px-2 py-0.5 text-white ">
-                    copy
+                  <button className="absolute bottom-4 right-3 float-right rounded-lg bg-black p-1 text-white ">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
+                      />
+                    </svg>
                   </button>
-                </div>{' '}
+                </div>
                 <strong>
                   <div className="text-xs">
                     TIP: Instagram allows about 30 hashtags per post so make
@@ -181,7 +259,7 @@ const Tag = () => {
                 you!
                 <div>
                   View {tag} from Social Media Instagram, TikTok, Youtube,
-                  Facebook, Twitter, Ello, Reddit, Line, Pinterest, Tumblr
+                  Facebook, Twitter, X, Ello, Reddit, Line, Pinterest, Tumblr
                 </div>
                 <div className="flex flex-wrap gap-1 text-xs">
                   {tagList?.map((el, i) => (
@@ -195,21 +273,20 @@ const Tag = () => {
                 <h3 className="py-4 text-xl font-bold">
                   Popular Instagram Hashtags
                 </h3>
-                <ul className=" flex max-w-2xl cursor-pointer flex-col gap-2 pr-2">
+                <div className=" flex max-w-2xl cursor-pointer flex-col gap-2 pr-2">
                   {tagObj?.map((tag) => {
                     return (
-                      <li>
-                        <span
-                          onClick={() => handleClick(tag?.tag)}
-                          className="flex justify-between"
-                        >
-                          <span>#{tag?.tag}</span>
-                          <span>{tag?.posts}</span>
-                        </span>
-                      </li>
+                      <a
+                        key={tag?.tag}
+                        href={`${domainUrl}/hashtag/${tag?.tag}`}
+                        className="flex justify-between border-b pb-2 text-blue-600"
+                      >
+                        <span>#{tag?.tag}</span>
+                        <span>{tag?.posts}</span>
+                      </a>
                     );
                   })}
-                </ul>
+                </div>
               </div>
 
               <div className="hidden h-screen pl-8 mdx:block mdx:w-1/3 mdx:overflow-y-scroll">

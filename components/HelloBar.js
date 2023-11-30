@@ -6,12 +6,12 @@ const HelloBar = () => {
 
   if (show) {
     return (
-      <div className=" w-full bg-green-600 p-1 text-center text-sm text-white"></div>
+      <div className=" w-full bg-blue-600 p-1 text-center text-sm text-white"></div>
     );
   }
 
   return (
-    <div className=" w-full bg-green-600 p-2 text-center text-sm text-white">
+    <div className=" w-full bg-blue-600 p-2 text-center text-sm text-white">
       Hashtaglly is FREE, Share with your Friends :)
     </div>
   );

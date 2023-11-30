@@ -15,14 +15,17 @@ const Menu = ({ handleToogle }) => {
   return (
     <>
       <div className="flex w-full flex-col bg-white text-xs">
-        <div className="flex items-center border-b p-4">
+        <div className="mb-2 flex items-center border-b p-2">
           <div className="flex w-full flex-col ">
             <span className="text-md font-bold ">LIST TOP 100 HASHTAGS !</span>
-            <span className="text-[9px] text-green-600">
+            <span className="pt-1 text-[9px]">
               (scroll to see more hashtags ↓)
             </span>
           </div>
-          <div onClick={handleToogle} className="text-xl mdx:hidden">
+          <div
+            onClick={handleToogle}
+            className="cursor-pointer text-xl mdx:hidden"
+          >
             <svg
               className="w-8"
               fill="none"
@@ -41,21 +44,20 @@ const Menu = ({ handleToogle }) => {
           </div>
         </div>
         <div className="w-full px-2">
-          <ul className="flex max-w-xl cursor-pointer flex-col gap-2 p-4">
-            {tagObj?.map((tag, i) => {
+          <div className=" flex max-w-2xl cursor-pointer flex-col gap-2 pr-2">
+            {tagObj?.map((tag) => {
               return (
-                <li>
-                  <span
-                    onClick={() => handleClick(tag?.tag)}
-                    className="flex justify-between"
-                  >
-                    <span>#{tag?.tag}</span>
-                    <span>{tag?.posts}</span>
-                  </span>
-                </li>
+                <a
+                  key={tag?.tag}
+                  href={`${domainUrl}/hashtag/${tag?.tag}`}
+                  className="flex justify-between border-b pb-2 text-blue-600"
+                >
+                  <span>#{tag?.tag}</span>
+                  <span>{tag?.posts}</span>
+                </a>
               );
             })}
-          </ul>
+          </div>
         </div>
       </div>
     </>

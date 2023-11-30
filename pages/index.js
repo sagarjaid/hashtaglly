@@ -17,6 +17,7 @@ const Home = () => {
     let tag = e.target.value;
     setHashtag(tag);
     console.log(tag);
+    console.log(tag?.length);
   };
 
   const handleSearch = (e) => {
@@ -28,11 +29,13 @@ const Home = () => {
     }
   };
 
-  const handleClick = (e) => {
-    let tag = e.target.value;
+  const handleClick = (tag) => {
     console.log(tag);
-    const href = `/hashtag/${tag}`;
-    router.push(href);
+    console.log(tag?.length);
+    if (tag.length > 2) {
+      const href = `/hashtag/${tag}`;
+      router.push(href);
+    }
   };
 
   return (
@@ -79,7 +82,7 @@ const Home = () => {
         />
         <link rel="icon" href="https://Hashtaglly.com/favicon.png" />
       </Head>
-      <div className="m-auto h-screen  bg-gradient-to-t from-white via-green-200 to-white">
+      <div className="m-auto h-screen  bg-gradient-to-t from-white via-blue-200 to-white">
         <HelloBar />
         <main className="m-auto flex h-screen max-w-5xl flex-col">
           <Nav />
@@ -87,7 +90,7 @@ const Home = () => {
             <div className="flex w-full flex-col items-center gap-10">
               <div className="line flex flex-col items-center text-center text-2xl font-extrabold sdm:text-4xl sm:gap-3 md:text-5xl mdx:text-6xl ">
                 <span>Find Best Hastags for</span>
-                <span className="text-green-600">
+                <span className="text-blue-600">
                   <Typewriter
                     options={{
                       strings: ['Youtube', 'TikTok', 'Instagram', 'Facebook'],
@@ -130,7 +133,7 @@ const Home = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   className="relative right-10 h-8 w-8 cursor-pointer rounded-full border p-2"
-                  onClick={handleClick}
+                  onClick={() => handleClick(hashtag)}
                 >
                   <path
                     strokeLinecap="round"

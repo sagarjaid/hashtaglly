@@ -42,7 +42,7 @@ const PouUp = () => {
                   </div>
                 </div>
                 <div
-                  className="cursor-pointer rounded-full bg-green-600 p-2 px-4 text-sm text-white"
+                  className="cursor-pointer rounded-full bg-blue-600 p-2 px-4 text-sm text-white"
                   onClick={() => window.location.reload()}
                 >
                   I have disabled AdBlockers manually
@@ -55,7 +55,7 @@ const PouUp = () => {
                 </div>
                 {toggle && (
                   <iframe
-                    className="aspect-video w-11/12 rounded-xl border-4 border-rose-600 bg-green-600"
+                    className="aspect-video w-11/12 rounded-xl border-4 border-rose-600 bg-blue-600"
                     title="How to Disable AdBlock on Google Chrome"
                     src="https://www.youtube.com/embed/OdIGBz5koX4"
                     allowfullscreen="true"
