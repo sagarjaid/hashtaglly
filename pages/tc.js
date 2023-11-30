@@ -8,8 +8,8 @@ const TC = () => {
   return (
     <>
       <SEOMeta
-        title="Terms and Conditions — Scrip AI"
-        description="10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts"
+        title="Terms and Conditions — Hashtaglly"
+        description="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
         slug="tc"
       />
       <HelloBar />
@@ -21,14 +21,14 @@ const TC = () => {
             <div className="text-sm">Updated on 1 April, 2023</div>
           </div>
           <p>
-            Welcome to Scrip AI! .These terms and conditions outline the rules
-            and regulations for the use of Scrip AI's Website, located at
+            Welcome to Hashtaglly! .These terms and conditions outline the rules
+            and regulations for the use of Hashtaglly's Website, located at
             https://Hashtaglly.com/.
           </p>
 
           <p>
             By accessing this website we assume you accept these terms and
-            conditions. Do not continue to use Scrip AI if you do not agree to
+            conditions. Do not continue to use Hashtaglly if you do not agree to
             take all of the terms and conditions stated on this page.
           </p>
 
@@ -55,8 +55,8 @@ const TC = () => {
           </h3>
 
           <p>
-            We employ the use of cookies. By accessing Scrip AI, you agreed to
-            use cookies in agreement with the Scrip AI's Privacy Policy.
+            We employ the use of cookies. By accessing Hashtaglly, you agreed to
+            use cookies in agreement with the Hashtaglly's Privacy Policy.
           </p>
 
           <p>
@@ -72,19 +72,19 @@ const TC = () => {
           </h3>
 
           <p>
-            Unless otherwise stated, Scrip AI and/or its licensors own the
-            intellectual property rights for all material on Scrip AI. All
+            Unless otherwise stated, Hashtaglly and/or its licensors own the
+            intellectual property rights for all material on Hashtaglly. All
             intellectual property rights are reserved. You may access this from
-            Scrip AI for your own personal use subjected to restrictions set in
-            these terms and conditions.
+            Hashtaglly for your own personal use subjected to restrictions set
+            in these terms and conditions.
           </p>
 
           <p>You must not:</p>
           <ul>
-            <li>Republish material from Scrip AI</li>
-            <li>Sell, rent or sub-license material from Scrip AI</li>
-            <li>Reproduce, duplicate or copy material from Scrip AI</li>
-            <li>Redistribute content from Scrip AI</li>
+            <li>Republish material from Hashtaglly</li>
+            <li>Sell, rent or sub-license material from Hashtaglly</li>
+            <li>Reproduce, duplicate or copy material from Hashtaglly</li>
+            <li>Redistribute content from Hashtaglly</li>
           </ul>
 
           <p>This Agreement shall begin on the date hereof.</p>
@@ -92,13 +92,13 @@ const TC = () => {
           <p>
             Parts of this website offer an opportunity for users to post and
             exchange opinions and information in certain areas of the website.
-            Scrip AI does not filter, edit, publish or review Comments prior to
-            their presence on the website. Comments do not reflect the views and
-            opinions of Scrip AI,its agents and/or affiliates. Comments reflect
-            the views and opinions of the person who post their views and
-            opinions. To the extent permitted by applicable laws, Scrip AI shall
-            not be liable for the Comments or for any liability, damages or
-            expenses caused and/or suffered as a result of any use of and/or
+            Hashtaglly does not filter, edit, publish or review Comments prior
+            to their presence on the website. Comments do not reflect the views
+            and opinions of Hashtaglly,its agents and/or affiliates. Comments
+            reflect the views and opinions of the person who post their views
+            and opinions. To the extent permitted by applicable laws, Hashtaglly
+            shall not be liable for the Comments or for any liability, damages
+            or expenses caused and/or suffered as a result of any use of and/or
             posting of and/or appearance of the Comments on this website.
           </p>
 
@@ -126,9 +126,9 @@ const TC = () => {
           </ul>
 
           <p>
-            You hereby grant Scrip AI a non-exclusive license to use, reproduce,
-            edit and authorize others to use, reproduce and edit any of your
-            Comments in any and all forms, formats or media.
+            You hereby grant Hashtaglly a non-exclusive license to use,
+            reproduce, edit and authorize others to use, reproduce and edit any
+            of your Comments in any and all forms, formats or media.
           </p>
 
           <h3>
@@ -186,8 +186,8 @@ const TC = () => {
             that: (a) the link would not make us look unfavorably to ourselves
             or to our accredited businesses; (b) the organization does not have
             any negative records with us; (c) the benefit to us from the
-            visibility of the hyperlink compensates the absence of Scrip AI; and
-            (d) the link is in the context of general resource information.
+            visibility of the hyperlink compensates the absence of Hashtaglly;
+            and (d) the link is in the context of general resource information.
           </p>
 
           <p>
@@ -201,7 +201,7 @@ const TC = () => {
           <p>
             If you are one of the organizations listed in paragraph 2 above and
             are interested in linking to our website, you must inform us by
-            sending an e-mail to Scrip AI. Please include your name, your
+            sending an e-mail to Hashtaglly. Please include your name, your
             organization name, contact information as well as the URL of your
             site, a list of any URLs from which you intend to link to our
             Website, and a list of the URLs on our site to which you would like
@@ -221,7 +221,7 @@ const TC = () => {
           </ul>
 
           <p>
-            No use of Scrip AI's logo or other artwork will be allowed for
+            No use of Hashtaglly's logo or other artwork will be allowed for
             linking absent a trademark license agreement.
           </p>
 

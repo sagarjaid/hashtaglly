@@ -8,8 +8,8 @@ const GDPR = () => {
   return (
     <>
       <SEOMeta
-        title="GDPR Policy — Scrip AI"
-        description="10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts"
+        title="GDPR Policy — Hashtaglly"
+        description="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
         slug="gdrp"
       />
       <HelloBar />
@@ -22,33 +22,33 @@ const GDPR = () => {
           </div>
 
           <p>
-            At Scrip AI, accessible from https://Hashtaglly.com/, one of our
+            At Hashtaglly, accessible from https://Hashtaglly.com/, one of our
             main priorities is the privacy of our visitors. This Privacy Policy
             document contains types of information that is collected and
-            recorded by Scrip AI and how we use it.
+            recorded by Hashtaglly and how we use it.
           </p>
 
           <h2>General Data Protection Regulation (GDPR)</h2>
           <p>We are a Data Controller of your information.</p>
 
           <p>
-            Scrip AI legal basis for collecting and using the personal
+            Hashtaglly legal basis for collecting and using the personal
             information described in this Privacy Policy depends on the Personal
             Information we collect and the specific context in which we collect
             the information:
           </p>
           <ul>
-            <li>Scrip AI needs to perform a contract with you</li>
-            <li>You have given Scrip AI permission to do so</li>
+            <li>Hashtaglly needs to perform a contract with you</li>
+            <li>You have given Hashtaglly permission to do so</li>
             <li>
-              Processing your personal information is in Scrip AI legitimate
+              Processing your personal information is in Hashtaglly legitimate
               interests
             </li>
-            <li>Scrip AI needs to comply with the law</li>
+            <li>Hashtaglly needs to comply with the law</li>
           </ul>
 
           <p>
-            Scrip AI will retain your personal information only for as long as
+            Hashtaglly will retain your personal information only for as long as
             is necessary for the purposes set out in this Privacy Policy. We
             will retain and use your information to the extent necessary to
             comply with our legal obligations, resolve disputes, and enforce our
@@ -80,7 +80,7 @@ const GDPR = () => {
           <h2>Cookies and Web Beacons</h2>
 
           <p>
-            Like any other website, Scrip AI uses "cookies". These cookies are
+            Like any other website, Hashtaglly uses "cookies". These cookies are
             used to store information including visitors' preferences, and the
             pages on the website that the visitor accessed or visited. The
             information is used to optimize the users' experience by customizing
@@ -127,13 +127,13 @@ const GDPR = () => {
 
           <p>
             You may consult this list to find the Privacy Policy for each of the
-            advertising partners of Scrip AI.
+            advertising partners of Hashtaglly.
           </p>
 
           <p>
             Third-party ad servers or ad networks uses technologies like
             cookies, JavaScript, or Web Beacons that are used in their
-            respective advertisements and links that appear on Scrip AI, which
+            respective advertisements and links that appear on Hashtaglly, which
             are sent directly to users' browser. They automatically receive your
             IP address when this occurs. These technologies are used to measure
             the effectiveness of their advertising campaigns and/or to
@@ -142,14 +142,14 @@ const GDPR = () => {
           </p>
 
           <p>
-            Note that Scrip AI has no access to or control over these cookies
+            Note that Hashtaglly has no access to or control over these cookies
             that are used by third-party advertisers.
           </p>
 
           <h2>Third Party Privacy Policies</h2>
 
           <p>
-            Scrip AI's Privacy Policy does not apply to other advertisers or
+            Hashtaglly's Privacy Policy does not apply to other advertisers or
             websites. Thus, we are advising you to consult the respective
             Privacy Policies of these third-party ad servers for more detailed
             information. It may include their practices and instructions about
@@ -172,7 +172,7 @@ const GDPR = () => {
           </p>
 
           <p>
-            Scrip AI does not knowingly collect any Personal Identifiable
+            Hashtaglly does not knowingly collect any Personal Identifiable
             Information from children under the age of 13. If you think that
             your child provided this kind of information on our website, we
             strongly encourage you to contact us immediately and we will do our
@@ -184,7 +184,7 @@ const GDPR = () => {
           <p>
             Our Privacy Policy applies only to our online activities and is
             valid for visitors to our website with regards to the information
-            that they shared and/or collect in Scrip AI. This policy is not
+            that they shared and/or collect in Hashtaglly. This policy is not
             applicable to any information collected offline or via channels
             other than this website.
           </p>

@@ -34,7 +34,7 @@ const Tag = () => {
   };
 
   const getData = async () => {
-    const response1 = await fetch('/api/getGPTdata', {
+    const response1 = await fetch('/api/getxGPTdata', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

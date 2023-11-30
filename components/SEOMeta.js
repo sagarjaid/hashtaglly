@@ -16,7 +16,7 @@ const SEOMeta = (props) => {
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
-        content={imgUrl || 'https://Hashtaglly.com/scrip-ai-cover.png'}
+        content={imgUrl || 'https://Hashtaglly.com/cover.png'}
       />
 
       <meta property="twitter:card" content="summary_large_image" />
@@ -25,14 +25,9 @@ const SEOMeta = (props) => {
       <meta property="twitter:description" content={description} />
       <meta
         property="twitter:image"
-        content={imgUrl || 'https://Hashtaglly.com/scrip-ai-cover.png'}
+        content={imgUrl || 'https://Hashtaglly.com/cover.png'}
       />
       <link rel="icon" href="https://Hashtaglly.com/favicon.png" />
-
-      <meta
-        name="google-site-verification"
-        content="Yp9e-xgEgjFSdaOwKgO0bv66QN5ScCpFxlGr0F8qUWk"
-      />
     </Head>
   );
 };

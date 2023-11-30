@@ -38,14 +38,16 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Scrip AI - Free AI writer [100% FREE - No Login required]</title>
+        <title>
+          Hashtaglly - Hashtag Generator [100% FREE - No Login required]
+        </title>
         <meta
           name="title"
-          content="Scrip AI - Free AI writer [100% FREE - No Login required]"
+          content="Hashtaglly - Hashtag Generator [100% FREE - No Login required]"
         />
         <meta
           name="description"
-          content="10X faster & free way to write AI content for 100+ use cases, try Free AI writer powerd by Scrip AI "
+          content="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
         />
         <link rel="canonical" href="https://Hashtaglly.com/" />
 
@@ -53,37 +55,29 @@ const Home = () => {
         <meta property="og:url" content="https://Hashtaglly.com/" />
         <meta
           property="og:title"
-          content="Scrip AI - Free AI writer [100% FREE - No Login required]"
+          content="Hashtaglly - Hashtag Generator [100% FREE - No Login required]"
         />
         <meta
           property="og:description"
-          content="10X faster & free way to write AI content for 100+ use cases, try Free AI writer powerd by Scrip AI "
+          content="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
         />
-        <meta
-          property="og:image"
-          content="https://Hashtaglly.com/scrip-ai-cover.png"
-        />
+        <meta property="og:image" content="https://Hashtaglly.com/cover.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://Hashtaglly.com/" />
         <meta
           property="twitter:title"
-          content="Scrip AI - Free AI writer [100% FREE - No Login required]"
+          content="Hashtaglly - Hashtag Generator [100% FREE - No Login required]"
         />
         <meta
           property="twitter:description"
-          content="10X faster & free way to write AI content for 100+ use cases, try Free AI writer powerd by Scrip AI "
+          content="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
         />
         <meta
           property="twitter:image"
-          content="https://Hashtaglly.com/scrip-ai-cover.png"
+          content="https://Hashtaglly.com/cover.png"
         />
         <link rel="icon" href="https://Hashtaglly.com/favicon.png" />
-
-        <meta
-          name="google-site-verification"
-          content="Yp9e-xgEgjFSdaOwKgO0bv66QN5ScCpFxlGr0F8qUWk"
-        />
       </Head>
       <div className="m-auto h-screen  bg-gradient-to-t from-white via-green-200 to-white">
         <HelloBar />

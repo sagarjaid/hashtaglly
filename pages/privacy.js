@@ -8,8 +8,8 @@ const Privacy = () => {
   return (
     <>
       <SEOMeta
-        title="Privacy Policy — Scrip AI"
-        description="10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts"
+        title="Privacy Policy — Hashtaglly"
+        description="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
         slug="privacy"
       />
       <HelloBar />
@@ -21,16 +21,16 @@ const Privacy = () => {
             <div className="text-sm">Updated on 1 April, 2023</div>
           </div>
           <p>
-            At Scrip AI, accessible from https://Hashtaglly.com/, one of our
+            At Hashtaglly, accessible from https://Hashtaglly.com/, one of our
             main priorities is the privacy of our visitors. This Privacy Policy
             document contains types of information that is collected and
-            recorded by Scrip AI and how we use it.
+            recorded by Hashtaglly and how we use it.
           </p>
 
           <h2>Log Files</h2>
 
           <p>
-            Scrip AI follows a standard procedure of using log files. These
+            Hashtaglly follows a standard procedure of using log files. These
             files log visitors when they visit websites. All hosting companies
             do this and a part of hosting services' analytics. The information
             collected by log files include internet protocol (IP) addresses,
@@ -45,7 +45,7 @@ const Privacy = () => {
           <h2>Cookies and Web Beacons</h2>
 
           <p>
-            Like any other website, Scrip AI uses "cookies". These cookies are
+            Like any other website, Hashtaglly uses "cookies". These cookies are
             used to store information including visitors' preferences, and the
             pages on the website that the visitor accessed or visited. The
             information is used to optimize the users' experience by customizing
@@ -92,13 +92,13 @@ const Privacy = () => {
 
           <p>
             You may consult this list to find the Privacy Policy for each of the
-            advertising partners of Scrip AI.
+            advertising partners of Hashtaglly.
           </p>
 
           <p>
             Third-party ad servers or ad networks uses technologies like
             cookies, JavaScript, or Web Beacons that are used in their
-            respective advertisements and links that appear on Scrip AI, which
+            respective advertisements and links that appear on Hashtaglly, which
             are sent directly to users' browser. They automatically receive your
             IP address when this occurs. These technologies are used to measure
             the effectiveness of their advertising campaigns and/or to
@@ -107,14 +107,14 @@ const Privacy = () => {
           </p>
 
           <p>
-            Note that Scrip AI has no access to or control over these cookies
+            Note that Hashtaglly has no access to or control over these cookies
             that are used by third-party advertisers.
           </p>
 
           <h2>Third Party Privacy Policies</h2>
 
           <p>
-            Scrip AI's Privacy Policy does not apply to other advertisers or
+            Hashtaglly's Privacy Policy does not apply to other advertisers or
             websites. Thus, we are advising you to consult the respective
             Privacy Policies of these third-party ad servers for more detailed
             information. It may include their practices and instructions about
@@ -137,7 +137,7 @@ const Privacy = () => {
           </p>
 
           <p>
-            Scrip AI does not knowingly collect any Personal Identifiable
+            Hashtaglly does not knowingly collect any Personal Identifiable
             Information from children under the age of 13. If you think that
             your child provided this kind of information on our website, we
             strongly encourage you to contact us immediately and we will do our
@@ -149,7 +149,7 @@ const Privacy = () => {
           <p>
             This Privacy Policy applies only to our online activities and is
             valid for visitors to our website with regards to the information
-            that they shared and/or collect in Scrip AI. This policy is not
+            that they shared and/or collect in Hashtaglly. This policy is not
             applicable to any information collected offline or via channels
             other than this website.
           </p>
