@@ -16,7 +16,7 @@ const AITools = () => {
       </div> */}
       <HelloBar />
       <main>
-        <div className="m-auto flex max-w-5xl flex-col items-center text-sm">
+        <div className="m-auto flex h-screen max-w-5xl flex-col items-center text-sm">
           <Nav />
           <Tools />
         </div>

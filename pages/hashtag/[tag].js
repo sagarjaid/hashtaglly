@@ -5,11 +5,18 @@ import Nav from '@/components/Nav';
 import SEOMeta from '@/components/SEOMeta';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { tagObj } from '@/components/tagObj';
 
 const Tag = () => {
   const router = useRouter();
 
   const tag = router.query.tag;
+
+  const handleClick = (tag) => {
+    console.log(tag);
+    const href = `/hashtag/${tag}`;
+    router.push(href);
+  };
 
   const [firstSet, setFirstSet] = useState(
     'loging most popular hashtag set...'
@@ -89,9 +96,9 @@ const Tag = () => {
         />
         <HelloBar />
         <main>
-          <div className="m-auto flex max-w-5xl flex-col items-center text-base">
+          <div className="m-auto flex h-screen max-w-5xl flex-col items-center text-base">
             <Nav />
-            <div className="flex w-full flex-col justify-around border-y p-4 sm:flex-row">
+            <div className="flex w-full flex-col justify-around border-y p-4 mdx:flex-row">
               <div className="flex w-full flex-col gap-4">
                 <h1 className="text-2xl font-bold">Hashtags for {tag}</h1>
                 <h2 className="text-xl">
@@ -184,8 +191,28 @@ const Tag = () => {
                   ))}
                 </div>
               </div>
+              <div className="mdx:hidden">
+                <h3 className="py-4 text-xl font-bold">
+                  Popular Instagram Hashtags
+                </h3>
+                <ul className=" flex max-w-2xl cursor-pointer flex-col gap-2 pr-2">
+                  {tagObj?.map((tag) => {
+                    return (
+                      <li>
+                        <span
+                          onClick={() => handleClick(tag?.tag)}
+                          className="flex justify-between"
+                        >
+                          <span>#{tag?.tag}</span>
+                          <span>{tag?.posts}</span>
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+
               <div className="hidden h-screen pl-8 mdx:block mdx:w-1/3 mdx:overflow-y-scroll">
-                {/* <Stats numberOfWords={numberOfWords} dollers={moneySaved} /> */}
                 <Menu />
               </div>
             </div>

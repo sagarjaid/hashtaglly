@@ -1,15 +1,14 @@
+import { TRACE_OUTPUT_VERSION } from 'next/dist/shared/lib/constants';
 import React from 'react';
 
 const HelloBar = () => {
-  const show = false;
+  const show = TRACE_OUTPUT_VERSION;
 
-  // if (!show) {
-  // return (
-  //   <div className=" w-full bg-green-600 p-1 text-center text-sm text-white">
-  //   </div>
-  // )
-  //   return null
-  // }
+  if (show) {
+    return (
+      <div className=" w-full bg-green-600 p-1 text-center text-sm text-white"></div>
+    );
+  }
 
   return (
     <div className=" w-full bg-green-600 p-2 text-center text-sm text-white">
