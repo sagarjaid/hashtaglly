@@ -4,7 +4,6 @@ const PageNotFound = () => {
   useEffect(() => {
     window.location.pathname = '/';
   }, []);
-  
 };
 
 export default PageNotFound;

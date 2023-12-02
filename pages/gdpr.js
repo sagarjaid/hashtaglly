@@ -9,7 +9,7 @@ const GDPR = () => {
     <>
       <SEOMeta
         title="GDPR Policy — Hashtaglly"
-        description="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
+        description="Hashtags for Instagram, Tiktok, Twitter, & more. Best Hashtag Generator in 2023"
         slug="gdrp"
       />
       <HelloBar />

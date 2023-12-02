@@ -50,7 +50,7 @@ const Home = () => {
         />
         <meta
           name="description"
-          content="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
+          content="Hashtags for Instagram, Tiktok, Twitter, & more. Best Hashtag Generator in 2023"
         />
         <link rel="canonical" href="https://Hashtaglly.com/" />
 
@@ -62,7 +62,7 @@ const Home = () => {
         />
         <meta
           property="og:description"
-          content="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
+          content="Hashtags for Instagram, Tiktok, Twitter, & more. Best Hashtag Generator in 2023"
         />
         <meta property="og:image" content="https://Hashtaglly.com/cover.png" />
 
@@ -74,7 +74,7 @@ const Home = () => {
         />
         <meta
           property="twitter:description"
-          content="Hashtags for Instagram, Tiktok, Twitter, X & more. Best Hashtag Generator in 2023"
+          content="Hashtags for Instagram, Tiktok, Twitter, & more. Best Hashtag Generator in 2023"
         />
         <meta
           property="twitter:image"
