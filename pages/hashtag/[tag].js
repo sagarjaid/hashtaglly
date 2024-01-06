@@ -240,21 +240,21 @@ const Tag = ({ hashtag }) => {
   );
 };
 
-// export async function getStaticPaths() {
-//   let pathsArr = tagObj.map((el) => {
-//     return { params: { tag: el.tag } };
-//   });
-//   return {
-//     paths: pathsArr,
-//     fallback: false,
-//   };
-// }
+export async function getStaticPaths() {
+  let pathsArr = tagObj.map((el) => {
+    return { params: { tag: el.tag } };
+  });
+  return {
+    paths: pathsArr,
+    fallback: false,
+  };
+}
 
-// export async function getStaticProps(context) {
-//   let hashtag = tagObj.find((el) => context.params.tag === el.tag);
-//   return {
-//     props: { hashtag },
-//   };
-// }
+export async function getStaticProps(context) {
+  let hashtag = tagObj.find((el) => context.params.tag === el.tag);
+  return {
+    props: { hashtag },
+  };
+}
 
 export default Tag;
