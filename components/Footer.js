@@ -20,8 +20,8 @@ const Footer = () => {
         GDPR
       </a>
       <span>|</span>
-      <a href="https://Hashtaglly.com/new" target="_blank">
-        New
+      <a href="https://Hashtaglly.com/sitemap-0.xml" target="_blank">
+        Sitemap
       </a>
     </div>
   );
