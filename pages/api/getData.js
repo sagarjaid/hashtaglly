@@ -2,9 +2,7 @@ import { TextServiceClient } from '@google-ai/generativelanguage';
 import { GoogleAuth } from 'google-auth-library';
 
 const MODEL_NAME = 'models/text-bison-001';
-const API_KEY =
-  process.env.NEXT_PUBLIC_GL_API_KEY ||
-  'AIzaSyCSivkPo6TfetEkZBkj_OK0sukGZdJucTg';
+const API_KEY = process.env.NEXT_PUBLIC_GL_API_KEY;
 
 const client = new TextServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),

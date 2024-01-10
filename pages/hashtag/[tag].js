@@ -11,7 +11,7 @@ import { domainUrl } from '@/components/domainUrl';
 const Tag = ({ hashtag }) => {
   const router = useRouter();
 
-  const tag = hashtag?.tag || router.query.tag;
+  const tag = hashtag?.tag ? hashtag?.tag : hashtag?.serverTag;
 
   const [firstSet, setFirstSet] = useState('Please Wait...');
 
@@ -246,12 +246,14 @@ export async function getStaticPaths() {
   });
   return {
     paths: pathsArr,
-    fallback: false,
+    fallback: true,
   };
 }
 
 export async function getStaticProps(context) {
-  let hashtag = tagObj.find((el) => context.params.tag === el.tag);
+  let hashtag = tagObj.find((el) => context.params.tag === el.tag) || {
+    serverTag: context.params.tag,
+  };
   return {
     props: { hashtag },
   };
